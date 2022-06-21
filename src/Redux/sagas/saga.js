@@ -22,6 +22,7 @@ function* onGetPosts() {
 
 function* onGetPostDetails({ payload: id }) {
   try {
+    debugger;
     const response = yield call(getPostDetails, id);
     yield put(getPostDetailsSuccess(response.data));
   } catch (error) {

@@ -7,5 +7,6 @@ export const getPosts = async () => {
 };
 
 export const getPostDetails = (id) => {
-  return axiosApp.get(`/posts/${id}`);
+  debugger;
+  return axios.get(`${REACT_APP_APP_URL}/posts/${id}`, {});
 };
